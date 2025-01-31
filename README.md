@@ -1,16 +1,17 @@
 # GraphQl_InformacionFinanciera
 
-raphQL - Sistema de Información Financiera y Validaciones
+GraphQL - Sistema de Información Financiera y Validaciones
 Objetivo:
 
 Desarrollar una API en GraphQL que gestione un sistema de consulta de datos financieros y validaciones tecnológicas.
 
-Colecciones:
+**Colecciones**:
 Usuarios: Contiene la información de los usuarios registrados en el sistema.
 Consultas Financieras: Registra las consultas realizadas por los usuarios sobre criptomonedas, tasas de interés e inflación.
 Validaciones Tecnológicas: Almacena los resultados de validaciones de correo electrónico y generación de contraseñas.
-Resolvers:
-addUser
+
+**Resolvers**:
+**addUser**
 
 Parámetros:
 
@@ -21,7 +22,7 @@ Dirección (ej. "Avenida Libertad, 25, Barcelona, España")
 Devuelve:
 El usuario recién creado con su ID.
 
-consultCryptoPrice
+**consultCryptoPrice**
 
 Parámetros:
 
@@ -29,17 +30,17 @@ Nombre de la criptomoneda (ej. "Bitcoin")
 Devuelve:
 El precio actualizado de la criptomoneda.
 
-consultInterestRate
+**consultInterestRate**
 
 Devuelve:
 La tasa de interés actual del mercado financiero.
 
-consultInflation
+**consultInflation**
 
 Devuelve:
 El porcentaje de inflación más reciente.
 
-validateEmail
+**validateEmail**
 
 Parámetros:
 
@@ -47,7 +48,7 @@ Dirección de correo electrónico a validar (ej. "ana.gomez@example.com")
 Devuelve:
 Un booleano indicando si el correo es válido o no.
 
-generateSecurePassword
+**generateSecurePassword**
 
 Parámetros:
 
@@ -57,8 +58,8 @@ Incluir números (true/false)
 Devuelve:
 Una contraseña generada de manera segura.
 
-Consultas (Queries)
-getUser
+**Consultas** (Queries)
+**getUser**
 
 Parámetro:
 
@@ -71,18 +72,18 @@ Correo electrónico
 Dirección
 Historial de consultas financieras
 Historial de validaciones tecnológicas
-getCryptoPriceHistory
+**getCryptoPriceHistory**
 
 Devuelve:
 Lista de todas las criptomonedas consultadas con su precio actualizado y fecha de consulta.
 
-getValidatedEmails
+**getValidatedEmails**
 
 Devuelve:
 Lista de correos electrónicos validados con fecha de validación y resultado.
 
 Eliminaciones y Actualizaciones
-deleteUser
+**deleteUser**
 
 Parámetro:
 
@@ -90,7 +91,7 @@ ID del usuario
 Devuelve:
 true o false según si el usuario ha sido eliminado correctamente.
 
-updateUser
+**updateUser**
 
 Parámetros:
 
